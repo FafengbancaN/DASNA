@@ -6,7 +6,7 @@
 
 DASNA 面向标签不平衡的监督式节点异常检测。整体流程分为三个部分：在训练子图上拟合扩散生成器，离线生成异常节点；构造并筛选邻居候选；通过多分支 Mamba 聚合得到节点表示和异常分数。
 
-![DASNA 框架](docs/figures/framework.png)
+![DASNA 框架](framework.png)
 
 ## 运行环境
 
