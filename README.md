@@ -13,37 +13,30 @@ relation-specific neighbor sequences with Mamba.
 
 ## Environments
 
-| Stage | Example environment name | Observed runtime |
-| --- | --- | --- |
-| Augmentation | `dasna-augmentation` | Python 3.10, PyTorch 2.6.0+cu124, CPU graph partitioning |
-| Detection | `dasna-detection` | Python 3.10, PyTorch 2.8.0+cu128, Mamba CUDA forward pass |
-
 ```bash
-conda activate dasna-augmentation
-python scripts/check_environment.py --stage augmentation --device cpu
-
-conda activate dasna-detection
-python scripts/check_environment.py --stage detection --device cuda
+torch-geometric==2.7.0
+pygod==1.1.0
+tqdm==4.67.3
+torch==2.8.0
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+PyYAML==6.0.3
+einops==0.8.2
+transformers==4.36.2
+mamba ssm==2.2.3 
+causal-conv1d==1.4.0
 ```
 
-## Data preparation
+## Data and Training
 
 ```bash
 conda activate dasna-detection
 python -m dasna.preprocessing --datasets amazon
-```
 
-## Training and generation
-
-```bash
 conda activate dasna-augmentation
 python -m dasna.augmentation.train --dataset amazon --ratio 10 --device -1 --output-dir data/generated/train-ratio
 
 conda activate dasna-detection
 python -m dasna.detection.train --config configs/amazon.yaml --generated-dir data/generated/train-ratio
 ```
-
-Use `python -m dasna.augmentation.generate --dataset amazon --ratio 10 --device -1
---output-dir data/generated/train-ratio` to generate from new-format checkpoints
-without retraining. Each entry point supports `--help`; generated MAT files are
-not overwritten unless `--overwrite` is explicitly selected.
