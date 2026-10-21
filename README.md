@@ -9,7 +9,7 @@ pipeline fits a latent diffusion generator on the training subgraph, generates
 synthetic anomalies offline, filters neighborhood candidates, and aggregates
 relation-specific neighbor sequences with Mamba.
 
-![DASNA framework](docs/figures/framework.png)
+![DASNA framework](framework.png)
 
 ## Environments
 
