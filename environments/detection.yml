@@ -1,8 +1,0 @@
-# Portable Conda bootstrap. Install the platform-specific packages described in
-# docs/environment.md after creation; this file does not recreate local Mamba.
-name: dasna-detection
-channels:
-  - defaults
-dependencies:
-  - python=3.10
-  - pip
