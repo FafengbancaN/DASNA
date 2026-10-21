@@ -11,22 +11,6 @@ relation-specific neighbor sequences with Mamba.
 
 ![DASNA framework](docs/figures/framework.png)
 
-
-## Repository layout
-
-```text
-dasna/
-  augmentation/     Graph autoencoder, latent diffusion, training and generation
-  detection/        Neighbor selection, Mamba aggregation, classifier and training
-  preprocessing.py  Original graph to adjacency-list conversion
-configs/             Six dataset configuration templates
-environments/        Two Conda bootstraps and stage-specific dependency records
-data/                Local datasets and caches, excluded from Git
-docs/                Abstract, framework, environment guide and release notes
-scripts/             Runtime checks, data inventory and repository checks
-LICENSES/            Component-specific license texts and notices
-```
-
 ## Environments
 
 | Stage | Example environment name | Observed runtime |
