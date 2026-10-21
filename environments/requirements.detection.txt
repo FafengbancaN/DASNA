@@ -1,7 +1,0 @@
-torch==2.8.0
-numpy==2.2.6
-scipy==1.15.3
-scikit-learn==1.7.2
-PyYAML==6.0.3
-einops==0.8.2
-transformers==4.36.2
