@@ -1,0 +1,22 @@
+# Detection versions observed on Windows, 2026-10-21.
+# Python: 3.10.20. CUDA build: 12.8. This is a partial inventory, not a full lock.
+# Local paths, account information and unrelated packages are omitted.
+# mamba-ssm came from a local source tree; the version alone cannot recreate it.
+# No redistributable Mamba wheel or source revision was established.
+torch==2.8.0+cu128
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+networkx==3.4.2
+PyYAML==6.0.3
+mamba-ssm==2.2.3.post1
+causal-conv1d==1.4.0
+einops==0.8.2
+transformers==4.36.2
+# Present in the source environment; not direct classifier dependencies:
+torch-geometric==2.3.1
+torch-scatter==2.1.2+pt28cu128
+torch-sparse==0.6.18+pt28cu128
+pygod==1.1.0
+tqdm==4.67.3
+dgl==2.2.1

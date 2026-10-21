@@ -1,0 +1,17 @@
+# Augmentation versions observed on Windows, 2026-10-21.
+# Python: 3.10.20. CUDA build: 12.4. This is a partial inventory, not a full lock.
+# Local paths, account information and unrelated packages are omitted.
+# CPU and toy ClusterData partition passed; CUDA failed on RTX 5060 Ti (sm_120).
+torch==2.6.0+cu124
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+networkx==3.4.2
+torch-geometric==2.7.0
+torch-scatter==2.1.2+pt26cu124
+torch-sparse==0.6.18+pt26cu124
+pygod==1.1.0
+tqdm==4.67.3
+# Optional original-data retrieval dependency; not used by MAT preprocessing:
+dgl==1.1.2
+torchdata==0.11.0

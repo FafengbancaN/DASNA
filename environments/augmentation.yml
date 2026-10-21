@@ -1,0 +1,7 @@
+# Portable Conda bootstrap. See docs/environment.md for PyTorch/PyG wheels.
+name: dasna-augmentation
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip

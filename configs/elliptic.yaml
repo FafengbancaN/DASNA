@@ -1,0 +1,40 @@
+# Runnable starting template; parameters have not been validated to reproduce paper results.
+# Relative paths are resolved from the repository root, independent of the current directory.
+# Mamba requires compatible CUDA / Torch / mamba-ssm / causal-conv1d builds.
+# Explicit CPU baseline: --aggregation GNN --cpu (does not validate the Mamba module).
+data_name: elliptic
+raw_dir: data/raw
+processed_dir: data/processed
+generated_dir: data/generated
+save_dir: artifacts/checkpoints/detection
+
+model: DASNA
+multi_relation: Mamba
+use_dm: true
+# The archived 10pct cache used a historical sampling convention. Newly generated
+# training-split ratios may produce a different node count; use a separate --generated-dir.
+data_suffix: _10pct_dm
+use_pick: true
+use_neighbor_filter: true
+choose_type: residual
+feat_residual_alpha: 0.5
+# 0 disables optional PCA. Match generated and base feature dimensions before PCA.
+feat_compress_dim: 0
+emb_size: 64
+mamba_d_state: 16
+mamba_d_conv: 4
+mamba_expand: 2
+
+seed: 72
+train_ratio: 0.4
+test_ratio: 0.67
+thres: 0.5
+rho: 0.5
+alpha: 2.0
+lr: 0.005
+weight_decay: 0.0005
+batch_size: 256
+num_epochs: 51
+valid_epochs: 5
+no_cuda: false
+cuda_id: '0'

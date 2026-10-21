@@ -1,0 +1,963 @@
+{
+  "description": "Inventory of local files; data and graph caches are excluded from Git.",
+  "files": [
+    {
+      "path": "data/raw/Amazon.mat",
+      "bytes": 222670456,
+      "sha256": "eb959e657de1017df5f7cc3e83dad20bc34a41c77afc6ab1f3ce99a87db0a5b9",
+      "nodes": 11944,
+      "positives": 821,
+      "fields": [
+        {
+          "name": "homo",
+          "shape": [
+            11944,
+            11944
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "net_upu",
+          "shape": [
+            11944,
+            11944
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "net_usu",
+          "shape": [
+            11944,
+            11944
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "net_uvu",
+          "shape": [
+            11944,
+            11944
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "features",
+          "shape": [
+            11944,
+            25
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "label",
+          "shape": [
+            1,
+            11944
+          ],
+          "type": "double"
+        },
+        {
+          "name": "train_mask",
+          "shape": [
+            1,
+            11944
+          ],
+          "type": "uint8"
+        },
+        {
+          "name": "val_mask",
+          "shape": [
+            1,
+            11944
+          ],
+          "type": "uint8"
+        },
+        {
+          "name": "test_mask",
+          "shape": [
+            1,
+            11944
+          ],
+          "type": "uint8"
+        }
+      ],
+      "split_counts": {
+        "train_mask": 7166,
+        "val_mask": 2389,
+        "test_mask": 2389
+      },
+      "training_positives": 493,
+      "overlapping_split_nodes": 0
+    },
+    {
+      "path": "data/raw/elliptic.mat",
+      "bytes": 143169288,
+      "sha256": "4804eb45ffdac19f106dd0301b4992c02f85ce1b5aea00856a39a30c8a0769d9",
+      "nodes": 203769,
+      "positives": 4545,
+      "fields": [
+        {
+          "name": "Network",
+          "shape": [
+            203769,
+            203769
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "Attributes",
+          "shape": [
+            203769,
+            165
+          ],
+          "type": "single"
+        },
+        {
+          "name": "Label",
+          "shape": [
+            1,
+            203769
+          ],
+          "type": "int64"
+        },
+        {
+          "name": "train_mask",
+          "shape": [
+            1,
+            203769
+          ],
+          "type": "logical"
+        },
+        {
+          "name": "val_mask",
+          "shape": [
+            1,
+            203769
+          ],
+          "type": "logical"
+        },
+        {
+          "name": "test_mask",
+          "shape": [
+            1,
+            203769
+          ],
+          "type": "logical"
+        },
+        {
+          "name": "source",
+          "shape": [
+            1
+          ],
+          "type": "char"
+        }
+      ],
+      "split_counts": {
+        "train_mask": 122261,
+        "val_mask": 40754,
+        "test_mask": 40754
+      },
+      "training_positives": 2727,
+      "overlapping_split_nodes": 0
+    },
+    {
+      "path": "data/raw/facebook.mat",
+      "bytes": 428133928,
+      "sha256": "5b75f03471435a7c3b17e939610a07e44e2a878f0d0522529e9bdf70b70d9586",
+      "nodes": 22470,
+      "positives": 6495,
+      "fields": [
+        {
+          "name": "Network",
+          "shape": [
+            22470,
+            22470
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "Attributes",
+          "shape": [
+            22470,
+            4714
+          ],
+          "type": "single"
+        },
+        {
+          "name": "Label",
+          "shape": [
+            1,
+            22470
+          ],
+          "type": "int64"
+        },
+        {
+          "name": "train_mask",
+          "shape": [
+            1,
+            22470
+          ],
+          "type": "logical"
+        },
+        {
+          "name": "val_mask",
+          "shape": [
+            1,
+            22470
+          ],
+          "type": "logical"
+        },
+        {
+          "name": "test_mask",
+          "shape": [
+            1,
+            22470
+          ],
+          "type": "logical"
+        },
+        {
+          "name": "source",
+          "shape": [
+            1
+          ],
+          "type": "char"
+        }
+      ],
+      "split_counts": {
+        "train_mask": 13482,
+        "val_mask": 4494,
+        "test_mask": 4494
+      },
+      "training_positives": 3897,
+      "overlapping_split_nodes": 0
+    },
+    {
+      "path": "data/raw/questions.mat",
+      "bytes": 50899632,
+      "sha256": "a34f8ca17c2086f3061c89bba63e1a92984c2cbaedc7e49c65811d52b7cb77fa",
+      "nodes": 48921,
+      "positives": 1460,
+      "fields": [
+        {
+          "name": "Network",
+          "shape": [
+            48921,
+            48921
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "Attributes",
+          "shape": [
+            48921,
+            301
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "Label",
+          "shape": [
+            1,
+            48921
+          ],
+          "type": "int64"
+        },
+        {
+          "name": "train_mask",
+          "shape": [
+            1,
+            48921
+          ],
+          "type": "uint8"
+        },
+        {
+          "name": "val_mask",
+          "shape": [
+            1,
+            48921
+          ],
+          "type": "uint8"
+        },
+        {
+          "name": "test_mask",
+          "shape": [
+            1,
+            48921
+          ],
+          "type": "uint8"
+        }
+      ],
+      "split_counts": {
+        "train_mask": 29352,
+        "val_mask": 9784,
+        "test_mask": 9785
+      },
+      "training_positives": 876,
+      "overlapping_split_nodes": 0
+    },
+    {
+      "path": "data/raw/weibo.mat",
+      "bytes": 16391848,
+      "sha256": "d39bdbd3a80f5ede882c82cbaf084a3afaeaecf1df67a1622c77ffb83d504d7f",
+      "nodes": 8405,
+      "positives": 868,
+      "fields": [
+        {
+          "name": "Network",
+          "shape": [
+            8405,
+            8405
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "Attributes",
+          "shape": [
+            8405,
+            400
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "Label",
+          "shape": [
+            1,
+            8405
+          ],
+          "type": "int64"
+        },
+        {
+          "name": "train_mask",
+          "shape": [
+            1,
+            8405
+          ],
+          "type": "uint8"
+        },
+        {
+          "name": "val_mask",
+          "shape": [
+            1,
+            8405
+          ],
+          "type": "uint8"
+        },
+        {
+          "name": "test_mask",
+          "shape": [
+            1,
+            8405
+          ],
+          "type": "uint8"
+        }
+      ],
+      "split_counts": {
+        "train_mask": 5043,
+        "val_mask": 1681,
+        "test_mask": 1681
+      },
+      "training_positives": 521,
+      "overlapping_split_nodes": 0
+    },
+    {
+      "path": "data/raw/YelpChi.mat",
+      "bytes": 207814464,
+      "sha256": "73b1a121f7f919df70079c7a65128b244e8c3d4395d4fd34e48c7709e94ac678",
+      "nodes": 45954,
+      "positives": 6677,
+      "fields": [
+        {
+          "name": "homo",
+          "shape": [
+            45954,
+            45954
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "net_rur",
+          "shape": [
+            45954,
+            45954
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "net_rtr",
+          "shape": [
+            45954,
+            45954
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "net_rsr",
+          "shape": [
+            45954,
+            45954
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "features",
+          "shape": [
+            45954,
+            32
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "label",
+          "shape": [
+            1,
+            45954
+          ],
+          "type": "int64"
+        },
+        {
+          "name": "train_mask",
+          "shape": [
+            1,
+            45954
+          ],
+          "type": "uint8"
+        },
+        {
+          "name": "val_mask",
+          "shape": [
+            1,
+            45954
+          ],
+          "type": "uint8"
+        },
+        {
+          "name": "test_mask",
+          "shape": [
+            1,
+            45954
+          ],
+          "type": "uint8"
+        }
+      ],
+      "split_counts": {
+        "train_mask": 27572,
+        "val_mask": 9191,
+        "test_mask": 9191
+      },
+      "training_positives": 4006,
+      "overlapping_split_nodes": 0
+    },
+    {
+      "path": "data/generated/amazon_10pct_standalone.mat",
+      "bytes": 34064,
+      "sha256": "c11a2fd15598ccc3daa2f75c0ef8d3d495b53e9013e967c148c8cb1bc74077cd",
+      "nodes": 82,
+      "positives": 82,
+      "fields": [
+        {
+          "name": "homo",
+          "shape": [
+            82,
+            82
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "features",
+          "shape": [
+            82,
+            25
+          ],
+          "type": "single"
+        },
+        {
+          "name": "label",
+          "shape": [
+            1,
+            82
+          ],
+          "type": "int64"
+        },
+        {
+          "name": "train_mask",
+          "shape": [
+            1,
+            82
+          ],
+          "type": "logical"
+        },
+        {
+          "name": "val_mask",
+          "shape": [
+            1,
+            82
+          ],
+          "type": "logical"
+        },
+        {
+          "name": "test_mask",
+          "shape": [
+            1,
+            82
+          ],
+          "type": "logical"
+        }
+      ],
+      "split_counts": {
+        "train_mask": 82,
+        "val_mask": 0,
+        "test_mask": 0
+      },
+      "training_positives": 82,
+      "overlapping_split_nodes": 0
+    },
+    {
+      "path": "data/generated/amazon_25pct_standalone.mat",
+      "bytes": 158744,
+      "sha256": "c977f2191110212653133c0fa26c07310ffd0f801bd2e86cbe71c8f90f5afb87",
+      "nodes": 205,
+      "positives": 205,
+      "fields": [
+        {
+          "name": "homo",
+          "shape": [
+            205,
+            205
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "features",
+          "shape": [
+            205,
+            25
+          ],
+          "type": "single"
+        },
+        {
+          "name": "label",
+          "shape": [
+            1,
+            205
+          ],
+          "type": "int64"
+        },
+        {
+          "name": "train_mask",
+          "shape": [
+            1,
+            205
+          ],
+          "type": "logical"
+        },
+        {
+          "name": "val_mask",
+          "shape": [
+            1,
+            205
+          ],
+          "type": "logical"
+        },
+        {
+          "name": "test_mask",
+          "shape": [
+            1,
+            205
+          ],
+          "type": "logical"
+        }
+      ],
+      "split_counts": {
+        "train_mask": 205,
+        "val_mask": 0,
+        "test_mask": 0
+      },
+      "training_positives": 205,
+      "overlapping_split_nodes": 0
+    },
+    {
+      "path": "data/generated/amazon_5pct_standalone.mat",
+      "bytes": 7728,
+      "sha256": "fa2e9caa7b93c88d08546570957839492df719096b10cc75783779f98e9b9eaa",
+      "nodes": 41,
+      "positives": 41,
+      "fields": [
+        {
+          "name": "homo",
+          "shape": [
+            41,
+            41
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "features",
+          "shape": [
+            41,
+            25
+          ],
+          "type": "single"
+        },
+        {
+          "name": "label",
+          "shape": [
+            1,
+            41
+          ],
+          "type": "int64"
+        },
+        {
+          "name": "train_mask",
+          "shape": [
+            1,
+            41
+          ],
+          "type": "logical"
+        },
+        {
+          "name": "val_mask",
+          "shape": [
+            1,
+            41
+          ],
+          "type": "logical"
+        },
+        {
+          "name": "test_mask",
+          "shape": [
+            1,
+            41
+          ],
+          "type": "logical"
+        }
+      ],
+      "split_counts": {
+        "train_mask": 41,
+        "val_mask": 0,
+        "test_mask": 0
+      },
+      "training_positives": 41,
+      "overlapping_split_nodes": 0
+    },
+    {
+      "path": "data/generated/elliptic_10pct_standalone.mat",
+      "bytes": 799600,
+      "sha256": "9ad7354ed41e7427869bf59c8a8799a69bad3a905e7fb3b3bbd0c5a2ba3cf79c",
+      "nodes": 454,
+      "positives": 454,
+      "fields": [
+        {
+          "name": "homo",
+          "shape": [
+            454,
+            454
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "features",
+          "shape": [
+            454,
+            165
+          ],
+          "type": "single"
+        },
+        {
+          "name": "label",
+          "shape": [
+            1,
+            454
+          ],
+          "type": "int64"
+        },
+        {
+          "name": "train_mask",
+          "shape": [
+            1,
+            454
+          ],
+          "type": "logical"
+        },
+        {
+          "name": "val_mask",
+          "shape": [
+            1,
+            454
+          ],
+          "type": "logical"
+        },
+        {
+          "name": "test_mask",
+          "shape": [
+            1,
+            454
+          ],
+          "type": "logical"
+        }
+      ],
+      "split_counts": {
+        "train_mask": 454,
+        "val_mask": 0,
+        "test_mask": 0
+      },
+      "training_positives": 454,
+      "overlapping_split_nodes": 0
+    },
+    {
+      "path": "data/generated/facebook_10pct_standalone.mat",
+      "bytes": 15633168,
+      "sha256": "36c206ee58b634ba12a7f0ba2c1b50cbee86032b04e6634861264a6667b9a751",
+      "nodes": 650,
+      "positives": 650,
+      "fields": [
+        {
+          "name": "homo",
+          "shape": [
+            650,
+            650
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "features",
+          "shape": [
+            650,
+            4714
+          ],
+          "type": "single"
+        },
+        {
+          "name": "label",
+          "shape": [
+            1,
+            650
+          ],
+          "type": "int64"
+        },
+        {
+          "name": "train_mask",
+          "shape": [
+            1,
+            650
+          ],
+          "type": "logical"
+        },
+        {
+          "name": "val_mask",
+          "shape": [
+            1,
+            650
+          ],
+          "type": "logical"
+        },
+        {
+          "name": "test_mask",
+          "shape": [
+            1,
+            650
+          ],
+          "type": "logical"
+        }
+      ],
+      "split_counts": {
+        "train_mask": 650,
+        "val_mask": 0,
+        "test_mask": 0
+      },
+      "training_positives": 650,
+      "overlapping_split_nodes": 0
+    },
+    {
+      "path": "data/generated/questions_10pct_standalone.mat",
+      "bytes": 202920,
+      "sha256": "d75ed726c160b8a79e2dba58b20d0cd44ddd2b3035e3b7b490a9753190d3e7f3",
+      "nodes": 146,
+      "positives": 146,
+      "fields": [
+        {
+          "name": "homo",
+          "shape": [
+            146,
+            146
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "features",
+          "shape": [
+            146,
+            301
+          ],
+          "type": "single"
+        },
+        {
+          "name": "label",
+          "shape": [
+            1,
+            146
+          ],
+          "type": "int64"
+        },
+        {
+          "name": "train_mask",
+          "shape": [
+            1,
+            146
+          ],
+          "type": "logical"
+        },
+        {
+          "name": "val_mask",
+          "shape": [
+            1,
+            146
+          ],
+          "type": "logical"
+        },
+        {
+          "name": "test_mask",
+          "shape": [
+            1,
+            146
+          ],
+          "type": "logical"
+        }
+      ],
+      "split_counts": {
+        "train_mask": 146,
+        "val_mask": 0,
+        "test_mask": 0
+      },
+      "training_positives": 146,
+      "overlapping_split_nodes": 0
+    },
+    {
+      "path": "data/generated/weibo_10pct_standalone.mat",
+      "bytes": 223056,
+      "sha256": "d51c42d32e5176db04d599f1e67589cd9d0ffc6a3add1e616cc3463721b08c3f",
+      "nodes": 87,
+      "positives": 87,
+      "fields": [
+        {
+          "name": "homo",
+          "shape": [
+            87,
+            87
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "features",
+          "shape": [
+            87,
+            400
+          ],
+          "type": "single"
+        },
+        {
+          "name": "label",
+          "shape": [
+            1,
+            87
+          ],
+          "type": "int64"
+        },
+        {
+          "name": "train_mask",
+          "shape": [
+            1,
+            87
+          ],
+          "type": "logical"
+        },
+        {
+          "name": "val_mask",
+          "shape": [
+            1,
+            87
+          ],
+          "type": "logical"
+        },
+        {
+          "name": "test_mask",
+          "shape": [
+            1,
+            87
+          ],
+          "type": "logical"
+        }
+      ],
+      "split_counts": {
+        "train_mask": 87,
+        "val_mask": 0,
+        "test_mask": 0
+      },
+      "training_positives": 87,
+      "overlapping_split_nodes": 0
+    },
+    {
+      "path": "data/generated/yelpchi_10pct_standalone.mat",
+      "bytes": 1487912,
+      "sha256": "1b9148a974431f44603d057943fb15579e94708d24325370a67878e7a17914ee",
+      "nodes": 668,
+      "positives": 668,
+      "fields": [
+        {
+          "name": "homo",
+          "shape": [
+            668,
+            668
+          ],
+          "type": "sparse"
+        },
+        {
+          "name": "features",
+          "shape": [
+            668,
+            32
+          ],
+          "type": "single"
+        },
+        {
+          "name": "label",
+          "shape": [
+            1,
+            668
+          ],
+          "type": "int64"
+        },
+        {
+          "name": "train_mask",
+          "shape": [
+            1,
+            668
+          ],
+          "type": "logical"
+        },
+        {
+          "name": "val_mask",
+          "shape": [
+            1,
+            668
+          ],
+          "type": "logical"
+        },
+        {
+          "name": "test_mask",
+          "shape": [
+            1,
+            668
+          ],
+          "type": "logical"
+        }
+      ],
+      "split_counts": {
+        "train_mask": 668,
+        "val_mask": 0,
+        "test_mask": 0
+      },
+      "training_positives": 668,
+      "overlapping_split_nodes": 0
+    }
+  ]
+}

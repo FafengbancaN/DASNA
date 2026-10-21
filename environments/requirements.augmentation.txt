@@ -1,0 +1,9 @@
+# Augmentation dependencies; install the chosen PyTorch build first.
+# ClusterData also needs matching native torch-scatter/torch-sparse wheels.
+torch==2.6.0
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+torch-geometric==2.7.0
+pygod==1.1.0
+tqdm==4.67.3
