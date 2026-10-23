@@ -28,12 +28,9 @@ causal-conv1d==1.4.0
 ## 数据与运行
 
 ```bash
-conda activate dasna-detection
 python -m dasna.preprocessing --datasets amazon
 
-conda activate dasna-augmentation
 python -m dasna.augmentation.train --dataset amazon --ratio 10 --device -1 --output-dir data/generated/train-ratio
 
-conda activate dasna-detection
 python -m dasna.detection.train --config configs/amazon.yaml --generated-dir data/generated/train-ratio
 ```
